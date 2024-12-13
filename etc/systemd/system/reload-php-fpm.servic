@@ -1,0 +1,6 @@
+[Unit]
+Description=Reload PHP 7.4 FPM
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/service php7.4-fpm reload
