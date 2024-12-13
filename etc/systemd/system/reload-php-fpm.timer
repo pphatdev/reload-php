@@ -1,0 +1,10 @@
+[Unit]
+Description=Run reload PHP 7.4 FPM every 12 hours
+
+[Timer]
+OnCalendar=*-*-* *:00:00
+OnCalendar=*-*-* *:12:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
