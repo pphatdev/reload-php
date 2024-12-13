@@ -1,9 +1,8 @@
 [Unit]
-Description=Run reload PHP 7.4 FPM every 12 hours
+Description=Run reload PHP 7.4 FPM every day at 12 AM
 
 [Timer]
-OnCalendar=*-*-* *:00:00
-OnCalendar=*-*-* *:12:00
+OnCalendar=*-*-* 00:00:00
 Persistent=true
 
 [Install]
